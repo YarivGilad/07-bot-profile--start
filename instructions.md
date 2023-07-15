@@ -17,9 +17,17 @@
    The <App> is the only component that manages a state.
    We can pass a setter function of a state variable from the <App> as a prop to the <List>
    You can modify the <App> state as you see fit.
-5. In the `src` folder - create an `api` folder and a `robots.api.ts` module.
+5. In the `src/api/robots.api.ts` module.
    expose an async function called `getRobotsList` and extract the networking implementation details from the <App> into this function
 
+## Bonus tasks 
+-----------------
+1. You may have noticed the avatars aren't always succesfull in
+   loading the images. Create a new component called <ImageLoader> that can be used in the <card> component and the <Profile> component.
+   It will have a built in behaviour of trying x times to load the image.
+   While the image is trying to load - display a default 🤖 robot emoji.
+   If the image still doesn't load after x attempts, display the 🤖 emoji.
+   
   ,_,
  (O,O)
  (   )
